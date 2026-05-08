@@ -1,13 +1,15 @@
 package org.example.keyguard.entities;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
 
-@Entity
+@Embeddable
+@EqualsAndHashCode
 @Getter
 @Setter
 @AllArgsConstructor
