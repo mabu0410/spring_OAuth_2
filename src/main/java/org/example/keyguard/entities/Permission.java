@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name =  "permissions")
+@Table(name = "permissions")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -19,7 +19,7 @@ import java.util.Set;
 public class Permission {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     @Column(name = "code", nullable = false, unique = true, length = 100)

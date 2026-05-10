@@ -3,8 +3,6 @@ package org.example.keyguard.entities;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
-
-import javax.management.relation.Role;
 import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
