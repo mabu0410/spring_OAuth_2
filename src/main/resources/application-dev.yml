@@ -7,6 +7,12 @@ spring:
     encoding: UTF-8
     fallback-to-system-locale: false
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/keyguard
+
   datasource:
     url: ${DB_URL}
     username: ${DB_USERNAME}
